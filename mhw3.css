@@ -1,0 +1,434 @@
+body
+{   
+    margin: 0%;
+}
+
+
+body p, #testo p
+{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Chango', cursive;
+}
+body div 
+{
+    text-align: center;
+    margin-bottom: 2%;
+}
+#foto
+{
+    align-items: center;
+}
+.grandezza
+{
+    height: 600px;
+    width: 600px;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+form h1
+{
+    text-align: center;
+}
+
+#immagini
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.conteiner
+{
+    width: 350px;
+    height: auto;
+    border: 2px solid black;
+    margin-right: 5px;
+    border-radius: 10px;
+
+
+}
+.conteiner img
+{
+    margin-top: 5px;
+}
+
+.intes
+{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2CADE4;
+}
+
+#immagini h1
+{
+    margin-top: -30px;
+    font-size: 1.8rem;
+}
+
+#sezione2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#sezione2 button
+{
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+header
+{
+    background-image: url("./img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 58%;
+    font-family: 'Cabin',Arial, sans-serif;
+    font-size: 1.6rem;
+    color: white;    
+    position: relative;
+}
+
+header::before
+{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.3);
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header nav
+{
+    display: flex;
+    height: 13%;
+    justify-content: space-between;
+    padding: 1% 1%;
+    align-items: center;
+    background-color: rgb(0, 0, 0,0.3);
+}
+
+.Titolo
+{
+
+    justify-content: flex-start;
+    font-size: 3.5rem;
+    z-index: 1;
+
+}
+
+.menu
+{
+
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    z-index: 1;
+}
+
+
+.centrale
+{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin-top: 6%;
+    z-index: 1;  
+
+}
+
+.centrale h1
+{
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.centrale a#button2,#botton5
+{
+    font-size: 1.6rem;
+    background-color: rgb(151, 191, 223,0.6);
+}
+.centrale a#button2:hover, #botton5:hover
+{
+    background-color: rgb(151, 191, 223,1.6);
+    cursor: pointer;
+}
+
+.menu a
+{
+    cursor: pointer;
+    color: white;
+}
+.menu a:hover
+{
+    font-size: 1.5rem;
+    color: white;
+}
+
+#button2
+{
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 0.3vw 0.3vw;
+    z-index: 2;
+}
+#button2:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+
+#fotoSale img
+{
+    height: 600px;
+    width: 900px;
+    border: 2px solid black;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+#prodotto
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right:10px;
+}
+
+#prodotto div
+{
+    width: 400px;
+    height: auto;
+}
+
+#tipo
+{
+    width: 100px;
+    height: 25px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+footer
+{
+    background-image: url("./img/Footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20%;
+    color: rgba(0, 0, 0, 0.7);
+    padding-top: 3%;
+    font-family: 'Cabin',Arial, sans-serif;
+    font-size: 1.6rem;
+    color: white; 
+    
+}
+
+#powered
+{
+    text-align: center;
+    color: rgba(255, 255,255);
+}
+
+#nome
+{
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    color: rgba(150, 150, 150, 0.9);
+    
+}
+
+
+.menuApp
+{
+    display: none;
+}
+.menuApp div
+{
+    background-color: white;
+    height: 2px;
+    width: 40px;
+    margin: 10px 0;
+}
+
+
+
+
+@media (max-width: 600px)
+{
+    .Titolo
+    {
+        font-size: 5vw;
+    }
+
+    header .centrale 
+    {
+        font-size: 1rem;
+    }
+    header .centrale h1
+    {
+        font-size: 2rem;
+    }
+
+    .menuApp div
+    {
+        background-color: white;
+        height: 2px;
+        width: 30px;
+        margin: 8px 0;
+    }
+
+
+    #button3, header .centrale #button2
+    {
+        font-size: 1.3rem;
+    }
+
+    footer
+    {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    nav .menu
+    {
+        display: none;
+    }
+    nav .menuApp
+    {
+        display: block;
+        margin-right: 5vw;
+    }
+
+    header
+   {
+    background-position-x: -330px;
+   }
+
+   .centrale
+   {
+        padding-top:15%;
+        font-size: 1.5rem;
+   }  
+}
+
+@media (max-width: 1000px)
+{ 
+
+    #fotoSale img
+    {
+        width: 600px;
+        height: 400px;
+    }
+    
+}
+
+@media (max-width: 600px)
+{
+    .Titolo
+    {
+        font-size: 5vw;
+    }
+
+    header .centrale 
+    {
+        font-size: 1rem;
+    }
+    header .centrale h1
+    {
+        font-size: 2rem;
+    }
+
+    .menuApp div
+    {
+        background-color: white;
+        height: 2px;
+        width: 30px;
+        margin: 8px 0;
+    }
+
+    #fotoSale img
+    {
+        width: 300px;
+        height: 200px;
+    }
+
+    body p
+    {
+        font-size: 1.3rem;
+    }
+
+    .conteiner
+    {
+        font-size: 1.3rem;
+    }
+
+    #sezione2 button
+    {
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+
+    footer
+    {
+        font-size: 0.5rem;
+    }
+
+    body section div
+    {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    nav .menu
+    {
+        display: none;
+    }
+    nav .menuApp
+    {
+        display: block;
+        margin-right: 5vw;
+    }
+
+    header
+   {
+    background-position-x: -330px;
+   }
+
+   .centrale
+   {
+        padding-top:15%;
+        font-size: 1.5rem;
+   }  
+
+}

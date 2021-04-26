@@ -1,0 +1,394 @@
+body
+{   
+    margin: 0%;
+}
+
+
+body p
+{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Chango', cursive;
+}
+body div 
+{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+header
+{
+    background-image: url("./img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 58%;
+    font-family: 'Cabin',Arial, sans-serif;
+    font-size: 1.6rem;
+    color: white;    
+    position: relative;
+}
+
+header::before
+{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.3);
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header nav
+{
+    display: flex;
+    height: 13%;
+    justify-content: space-between;
+    padding: 1% 1%;
+    align-items: center;
+    background-color: rgb(0, 0, 0,0.3);
+}
+
+.Titolo
+{
+
+    justify-content: flex-start;
+    font-size: 3.5rem;
+    z-index: 1;
+
+}
+
+.menu
+{
+
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    z-index: 1;
+}
+
+
+.centrale
+{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin-top: 6%;
+    z-index: 1;  
+
+}
+
+.centrale h1
+{
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.centrale a#button2
+{
+    font-size: 1.6rem;
+    background-color: rgb(151, 191, 223,0.6);
+}
+.centrale a#button2:hover
+{
+    background-color: rgb(151, 191, 223,1.6);
+    cursor: pointer;
+}
+
+.menu a
+{
+    cursor: pointer;
+    color: white;
+}
+.menu a:hover
+{
+    font-size: 1.5rem;
+    color: white;
+}
+
+#button2
+{
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 0.3vw 0.3vw;
+    z-index: 2;
+}
+#button2:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+section  
+{
+    display: flex;
+    flex-wrap: wrap;    
+    height: auto;
+    justify-content: space-between;
+    font-family: 'Syne Mono', monospace,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: normal;
+    color: white; 
+}
+section div
+{
+    margin-top: 6vw;
+    width: 500px;
+}
+
+  img
+{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+section  div h1 
+{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(86, 8, 0);
+}
+
+.imgplus
+{
+    width: 50px;
+    height: 50px;
+    margin-top:-30px;
+    margin-bottom: 15px;  
+    cursor: pointer;  
+}
+
+.Preferiti
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.WHImg
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.img2
+{
+    width: 50px;
+    height: 50px;
+    cursor: pointer
+}
+
+.text
+{
+    margin:0;
+    text-align: left;
+    position: absolute;
+    display: block;    
+}
+
+.pref
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.mostra
+{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.8rem;
+
+}
+
+.prefer
+{
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+
+section  div p, section  div h4
+{
+    text-align: center;
+    font-size: 1.8rem;
+    color: black;
+    font-family: 'Caveat', cursive, sans-serif;    
+}
+#button3
+{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 0.3vw 0.3vw;
+    color: black;
+    font-size: 1.8rem;
+}
+#button3:hover
+{
+    background-color: rgb(80,80, 80,0.5);
+    color: white;
+}
+
+footer
+{
+    background-image: url("./img/Footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20%;
+    color: rgba(0, 0, 0, 0.7);
+    padding-top: 3%;
+    font-family: 'Cabin',Arial, sans-serif;
+    font-size: 1.6rem;
+    color: white; 
+    
+}
+
+#powered
+{
+    text-align: center;
+    color: rgba(255, 255,255);
+}
+
+#nome
+{
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    color: rgba(150, 150, 150, 0.9);
+    
+}
+
+
+.menuApp
+{
+    display: none;
+}
+.menuApp div
+{
+    background-color: white;
+    height: 2px;
+    width: 40px;
+    margin: 10px 0;
+}
+
+
+
+
+@media (max-width: 1000px)
+{ 
+
+    section 
+    {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 600px)
+{
+    .Titolo
+    {
+        font-size: 5vw;
+    }
+
+    header .centrale 
+    {
+        font-size: 1rem;
+    }
+    header .centrale h1
+    {
+        font-size: 2rem;
+    }
+
+    .menuApp div
+    {
+        background-color: white;
+        height: 2px;
+        width: 30px;
+        margin: 8px 0;
+    }
+
+    img
+    {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    section div h1
+    {
+        font-size: 1.3rem;
+    }
+    .mostra
+    {
+    font-size: 1.4rem;
+
+    }
+
+    body p
+    {
+        font-size: 1.6rem;
+    }
+
+    #button3, header .centrale #button2
+    {
+        font-size: 1.3rem;
+    }
+
+    footer
+    {
+        font-size: 0.5rem;
+    }
+
+    body section div
+    {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    nav .menu
+    {
+        display: none;
+    }
+    nav .menuApp
+    {
+        display: block;
+        margin-right: 5vw;
+    }
+
+    header
+   {
+    background-position-x: -330px;
+   }
+
+   .centrale
+   {
+        padding-top:15%;
+        font-size: 1.5rem;
+   }  
+   section 
+   {
+       flex-wrap: nowrap;
+       flex-direction: column;
+       align-items: center;
+   }
+}

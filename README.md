@@ -10,7 +10,9 @@ L’altra pagina invece chiamata «Sale» è possibile scegliere tra 3 sale «Sa
 Ho utilizzato 3 API tramite i seguenti link:
 
 Spotify -> https://developer.spotify.com/documentation/
+
 Piatto Random  -> https://foodish-api.herokuapp.com/
+
 Altri Piatti ->https://spoonacular.com/food-api
 
 
